@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: purple;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MapCutter">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label alignment="CENTER" layoutX="171.0" layoutY="37.0" text="Georeference Your Map!" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="144.0" layoutY="320.0" prefHeight="31.0" prefWidth="318.0" text="Developed By: Yahya Almardeny">
+               <font>
+                  <Font name="OCR A Extended" size="18.0" />
+               </font>
+               <textFill>
+                  <LinearGradient cycleMethod="REPEAT" endX="1.0" endY="1.0" startX="0.6095238095238095" startY="0.36666666666666664">
+                     <stops>
+                        <Stop color="#141414" />
+                        <Stop color="BLACK" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="230.0" layoutY="363.0" text="© All Rights Reserved 2017" textAlignment="CENTER" textFill="WHITE" />
+            <Button fx:id="go" focusTraversable="false" layoutX="259.0" layoutY="254.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="91.0" text="Let's Do It!" textAlignment="CENTER" textFill="#0a0559">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="browse" focusTraversable="false" layoutX="233.0" layoutY="210.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="144.0" text="Select Image Map" textAlignment="CENTER" textFill="#0d0d0d">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <TextField fx:id="width" layoutX="305.0" layoutY="158.0" prefHeight="25.0" prefWidth="48.0" promptText="width" />
+            <TextField fx:id="height" layoutX="359.0" layoutY="158.0" prefHeight="25.0" prefWidth="48.0" promptText="height" />
+            <Label layoutX="191.0" layoutY="163.0" text="Target Scene Size" textFill="#101110">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="sessionWidth" layoutX="305.0" layoutY="120.0" prefHeight="25.0" prefWidth="48.0" promptText="width" />
+            <TextField fx:id="sessionHeight" layoutX="359.0" layoutY="120.0" prefHeight="25.0" prefWidth="48.0" promptText="height" />
+            <Label layoutX="191.0" layoutY="125.0" text="Session Scene Size" textFill="#101110">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</StackPane>

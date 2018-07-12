@@ -3,5 +3,6 @@ This Program shall help in cutting a given image (map) into visual regions by cr
 
 This class will create variables with specific values to control the Position Translation (X & Y) of the regions, so they become fully resizable as well as they shall comply with the Size Changes of the Scene.
 
+All Rights Reserved - Yahya Almardeny.
 
 ![Alt Text](https://github.com/John-Almardeny/Map-Cutter-JavaFX/blob/master/Map%20Cutter.gif?raw=true)
